@@ -68,6 +68,7 @@ pub fn main() {
         ..Transformable::suggested()
     }
     .make()
+    .with(name(), "prefab-cube".to_string())
     .with(is_moving(), ())
     .spawn();
 
@@ -83,7 +84,7 @@ pub fn main() {
     .with(local_to_world(), Default::default())
     .with(visualize_collider(), ())
     .with(kinematic(), ())
-    .with(name(), "prefab-cube-parent".to_string())
+    .with(name(), "prefab-cube".to_string())
     .spawn();
 
     entity::add_component(parent_id, children(), vec![]);
