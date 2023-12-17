@@ -1,0 +1,17 @@
+[[pipelines]]
+type = "Models"
+output_animations = false
+sources = ["cube.glb"]
+
+[pipelines.collider]
+type = "FromModel"
+reverse_indices = false
+
+[[pipelines]]
+type = "Models"
+output_animations = false
+sources = ["ground.glb"]
+
+[pipelines.collider]
+type = "FromModel"
+reverse_indices = false

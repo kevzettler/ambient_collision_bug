@@ -1,0 +1,26 @@
+[package]
+name = "ambient_collision_bug"
+
+edition = "2021"
+publish = false
+version = "0.0.1"
+
+[dependencies]
+ambient_api = { git = "https://github.com/AmbientRun/Ambient.git", tag = "v0.3.2-nightly-2023-11-11" }
+
+[build-dependencies]
+ambient_pipeline_types = { git = "https://github.com/AmbientRun/Ambient.git", rev = "c5f218a723cb245389fb7c83cbd07cd3eb0655f0" }
+
+[[bin]]
+name = "ambient_collision_bug_client"
+path = "src/client.rs"
+required-features = ["client"]
+
+[[bin]]
+name = "ambient_collision_bug_server"
+path = "src/server.rs"
+required-features = ["server"]
+
+[features]
+client = ["ambient_api/client"]
+server = ["ambient_api/server"]

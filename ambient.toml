@@ -1,0 +1,6 @@
+[package]
+id = "gq5cr225xjxwcjpnyvcykthmtsgock2s"
+name = "ambient_collision_bug"
+version = "0.0.1"
+content = { type = "Playable" }
+ambient_version = "0.3.2-nightly-2023-11-11"
