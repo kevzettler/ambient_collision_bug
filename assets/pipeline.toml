@@ -1,5 +1,6 @@
 [[pipelines]]
 type = "Models"
+collider_type = "Dynamic"
 output_animations = false
 sources = ["cube.glb"]
 

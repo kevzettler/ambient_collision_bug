@@ -1,7 +1,5 @@
 use ambient_pipeline_types::{
-    models::{Collider, ColliderType},
-    MaterialsImporter, MaterialsPipeline, ModelImporter, ModelsPipeline, Pipeline,
-    PipelinePbrMaterial, PipelineProcessor, PipelinesFile,
+    models::Collider, ModelImporter, ModelsPipeline, Pipeline, PipelineProcessor, PipelinesFile,
 };
 
 fn main() {
@@ -15,6 +13,7 @@ fn main() {
                         flip_normals: false,
                         reverse_indices: false,
                     },
+                    collider_type: ambient_pipeline_types::models::ColliderType::Dynamic,
                     ..Default::default()
                 }),
                 sources: vec!["cube.glb".to_string()],

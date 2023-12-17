@@ -4,3 +4,9 @@ name = "ambient_collision_bug"
 version = "0.0.1"
 content = { type = "Playable" }
 ambient_version = "0.3.2-nightly-2023-11-11"
+
+
+[components]
+is_moving = { type = "Empty", name = "Is Controlled", description = "Marks the entity to be controlled in the frame loop", attributes = [
+    "Debuggable",
+] }
